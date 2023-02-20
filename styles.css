@@ -1,0 +1,237 @@
+html {
+  --headerTextWhite: #b8b6b4;
+  --headerDarkBlue1: #171a21;
+  --gpStoreDarkerGrey: #1b2838;
+  --gpStoreDarkestGrey: #000f18;
+
+  --pwBackgroundGradient: linear-gradient(
+    180deg,
+    var(--gpStoreDarkGrey) 0%,
+    var(--gpStoreDarkerGrey) 80%
+  );
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #c6d4df;
+    font-size: 12px;
+}
+
+.background {
+  background-color: var(--gpStoreDarkerGrey);
+}
+
+/* header css start */
+
+.global-header {
+  background: var(--headerDarkBlue1);
+  background-position: center top;
+  min-width: 940px;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.global-header .content {
+  background: var(--headerDarkBlue1);
+  position: relative;
+  width: 940px;
+  height: 104px;
+  margin: 0px auto;
+  z-index: 402;
+}
+
+.global-header .menuitem {
+  display: block;
+  position: relative;
+  padding-top: 45px;
+  padding-left: 7px;
+  padding-right: 7px;
+  padding-bottom: 7px;
+  line-height: 16px;
+  float: left;
+  font-size: 14px;
+  color: var(--headerTextWhite);
+  text-transform: uppercase;
+}
+
+.global-header div.logo {
+  float: left;
+  padding-top: 30px;
+  margin-right: 40px;
+  width: 176px;
+  height: 44px;
+}
+
+/* header css end */
+/* main page content */
+
+.main-cluster {
+  background: url(/assets/cluster_bg.png) bottom center no-repeat;
+}
+
+.main-page-content {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
+}
+
+.carousel-container {
+  position: relative;
+}
+
+.carousel-container.main {
+  height: 380px;
+  margin-top: 5px;
+}
+
+.carousel-items {
+  position: relative;
+  clear: both;
+}
+
+.carousel-container.main .carousel-items {
+  height: 353px;
+  overflow: hidden;
+  box-shadow: 0 0 7px 0px #000;
+}
+
+.carousel-container .carousel-thumbs {
+  text-align: center;
+  min-height: 37px;
+  padding-bottom: 4px;
+}
+
+.carousel-container .carousel-thumbs > div {
+  display: inline-block;
+  margin: 12px 2px;
+  width: 15px;
+  height: 9px;
+  border-radius: 2px;
+  transition: background-color 0.2s;
+  background-color: hsla(202, 60%, 100%, 0.2);
+  cursor: pointer;
+}
+
+.carousel-container .carousel-thumbs > div.focus {
+  background-color: hsla(202, 60%, 100%, 0.4);
+}
+
+.carousel-container .carousel-thumbs > div:hover {
+  background-color: hsla(202, 60%, 100%, 0.3);
+}
+
+/* carousel arrow style */
+
+.carousel-container .arrow {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 35%;
+  width: 23px;
+  height: 36px;
+  padding: 36px 11px;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.carousel-container.main .arrow {
+  top: 122px;
+  box-sizing: content-box;
+}
+
+.carousel-container .arrow.left {
+  left: -46px;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0.3) 5%,
+    rgba(0, 0, 0, 0) 95%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.3) 5%,
+    rgba(0, 0, 0, 0) 95%
+  );
+}
+
+.carousel-container .arrow.left:hover {
+  background: -webkit-linear-gradient(
+    left,
+    rgba(171, 218, 244, 0.3) 5%,
+    rgba(171, 218, 244, 0) 95%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(171, 218, 244, 0.3) 5%,
+    rgba(171, 218, 244, 0) 95%
+  );
+}
+
+.carousel-container .arrow.right {
+  right: -46px;
+  background: -webkit-linear-gradient(
+    left,
+    rgba(0, 0, 0, 0) 5%,
+    rgba(0, 0, 0, 0.3) 95%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0) 5%,
+    rgba(0, 0, 0, 0.3) 95%
+  );
+}
+
+.carousel-container .arrow.right:hover {
+  background: -webkit-linear-gradient(
+    left,
+    rgba(171, 218, 244, 0) 5%,
+    rgba(171, 218, 244, 0.3) 95%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(171, 218, 244, 0) 5%,
+    rgba(171, 218, 244, 0.3) 95%
+  );
+}
+
+.carousel-container .arrow > div {
+  background-image: url(/assets/arrows.png);
+  width: 23px;
+  height: 36px;
+}
+
+.carousel-container .arrow.left > div {
+  background-position-x: 23px;
+}
+
+/* carousel arrow style */
+
+/* end main page content */
+
+/* genereal */
+.content-section {
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  overflow: hidden;
+}
+
+.page-header {
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #fff;
+  margin: 0 0 10px;
+  letter-spacing: 0.03em;
+  font-weight: normal;
+  padding-top: 2px;
+}
+
+.mySlides {
+  display: none;
+}
