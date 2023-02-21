@@ -16,7 +16,7 @@ function nextSlide() {
 
 function carousel() {
   showSlide(slideIndex + 1);
-  slideTimeoutID = setTimeout(carousel, 6000); // Change image every 6 seconds
+  // slideTimeoutID = setTimeout(carousel, 6000); // Change image every 6 seconds
 }
 
 function showSlide(n) {
