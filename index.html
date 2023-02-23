@@ -4,20 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/motiva-sans" />
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" /> -->
     <link rel="stylesheet" href="styles.css" />
     <title>Cody Hubbard</title>
   </head>
   <body class="background">
-    <div class="global-header">
+    <div id="global-header">
       <div class="content">
         <div class="logo">
           <img src="/assets/logo_steam.svg" width="176" height="44" />
         </div>
-        <a href="#" class="w3-button menuitem">Home</a>
-        <a href="#" class="w3-button menuitem">Link 1</a>
-        <a href="#" class="w3-button menuitem">Link 2</a>
-        <a href="#" class="w3-button menuitem">Link 3</a>
+        <div class="container">
+          <a
+            class="menuitem"
+            href="https://www.linkedin.com/in/codyshubbard/"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+          <a
+            class="menuitem"
+            href="https://github.com/CSHubbard"
+            target="_blank"
+          >
+            GitHub
+          </a>
+          <a class="menuitem" href="mailto:codysphubbard@gmail.com">Email</a>
+        </div>
+        <div id="global-accent">
+          <span class="name-text-content"> My Steam Profile </span>
+          <a
+            href="https://steamcommunity.com/id/AceTrainerCoryn/"
+            class="playerAvatar online"
+            target="_blank"
+          >
+            <img
+              src="https://avatars.cloudflare.steamstatic.com/78773b4504c56653299d547173129f4b32a178d7.jpg"
+            />
+          </a>
+        </div>
       </div>
     </div>
     <div class="content-section main-cluster">
@@ -25,7 +50,7 @@
         <h2 class="page-header">Featured & Recommended</h2>
         <div class="carousel-container main">
           <div
-            onmouseenter ="showGlobalHover()"
+            onmouseenter="showGlobalHover()"
             onmouseleave="hideGlobalHover()"
             class="carousel-items"
           >
@@ -48,25 +73,25 @@
                 </div>
                 <div class="mini-screenshots">
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-1')"
+                    onmouseenter="changeMainImage(this, 'main-screen-1')"
                     onmouseleave="resetMainImage('main-screen-1')"
                   >
                     <img src="/assets/card_capsule/slide1/mini_slide_1.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-1')"
+                    onmouseenter="changeMainImage(this, 'main-screen-1')"
                     onmouseleave="resetMainImage('main-screen-1')"
                   >
                     <img src="/assets/card_capsule/slide1/mini_slide_2.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-1')"
+                    onmouseenter="changeMainImage(this, 'main-screen-1')"
                     onmouseleave="resetMainImage('main-screen-1')"
                   >
                     <img src="/assets/card_capsule/slide1/mini_slide_3.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-1')"
+                    onmouseenter="changeMainImage(this, 'main-screen-1')"
                     onmouseleave="resetMainImage('main-screen-1')"
                   >
                     <img src="/assets/card_capsule/slide1/mini_slide_4.jpg" />
@@ -94,25 +119,25 @@
                 </div>
                 <div class="mini-screenshots">
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-2')"
+                    onmouseenter="changeMainImage(this, 'main-screen-2')"
                     onmouseleave="resetMainImage('main-screen-2')"
                   >
                     <img src="/assets/card_capsule/slide2/mini_slide_1.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-2')"
+                    onmouseenter="changeMainImage(this, 'main-screen-2')"
                     onmouseleave="resetMainImage('main-screen-2')"
                   >
                     <img src="/assets/card_capsule/slide2/mini_slide_2.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-2')"
+                    onmouseenter="changeMainImage(this, 'main-screen-2')"
                     onmouseleave="resetMainImage('main-screen-2')"
                   >
                     <img src="/assets/card_capsule/slide2/mini_slide_3.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-2')"
+                    onmouseenter="changeMainImage(this, 'main-screen-2')"
                     onmouseleave="resetMainImage('main-screen-2')"
                   >
                     <img src="/assets/card_capsule/slide2/mini_slide_4.jpg" />
@@ -140,25 +165,25 @@
                 </div>
                 <div class="mini-screenshots">
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-3')"
+                    onmouseenter="changeMainImage(this, 'main-screen-3')"
                     onmouseleave="resetMainImage('main-screen-3')"
                   >
                     <img src="/assets/card_capsule/slide3/mini_slide_1.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-3')"
+                    onmouseenter="changeMainImage(this, 'main-screen-3')"
                     onmouseleave="resetMainImage('main-screen-3')"
                   >
                     <img src="/assets/card_capsule/slide3/mini_slide_2.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-3')"
+                    onmouseenter="changeMainImage(this, 'main-screen-3')"
                     onmouseleave="resetMainImage('main-screen-3')"
                   >
                     <img src="/assets/card_capsule/slide3/mini_slide_3.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-3')"
+                    onmouseenter="changeMainImage(this, 'main-screen-3')"
                     onmouseleave="resetMainImage('main-screen-3')"
                   >
                     <img src="/assets/card_capsule/slide3/mini_slide_4.jpg" />
@@ -186,25 +211,25 @@
                 </div>
                 <div class="mini-screenshots">
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-4')"
+                    onmouseenter="changeMainImage(this, 'main-screen-4')"
                     onmouseleave="resetMainImage('main-screen-4')"
                   >
                     <img src="/assets/card_capsule/slide4/mini_slide_1.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-4')"
+                    onmouseenter="changeMainImage(this, 'main-screen-4')"
                     onmouseleave="resetMainImage('main-screen-4')"
                   >
                     <img src="/assets/card_capsule/slide4/mini_slide_2.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-4')"
+                    onmouseenter="changeMainImage(this, 'main-screen-4')"
                     onmouseleave="resetMainImage('main-screen-4')"
                   >
                     <img src="/assets/card_capsule/slide4/mini_slide_3.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-4')"
+                    onmouseenter="changeMainImage(this, 'main-screen-4')"
                     onmouseleave="resetMainImage('main-screen-4')"
                   >
                     <img src="/assets/card_capsule/slide4/mini_slide_4.jpg" />
@@ -232,25 +257,25 @@
                 </div>
                 <div class="mini-screenshots">
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-5')"
+                    onmouseenter="changeMainImage(this, 'main-screen-5')"
                     onmouseleave="resetMainImage('main-screen-5')"
                   >
                     <img src="/assets/card_capsule/slide5/mini_slide_1.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-5')"
+                    onmouseenter="changeMainImage(this, 'main-screen-5')"
                     onmouseleave="resetMainImage('main-screen-5')"
                   >
                     <img src="/assets/card_capsule/slide5/mini_slide_2.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-5')"
+                    onmouseenter="changeMainImage(this, 'main-screen-5')"
                     onmouseleave="resetMainImage('main-screen-5')"
                   >
                     <img src="/assets/card_capsule/slide5/mini_slide_3.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-5')"
+                    onmouseenter="changeMainImage(this, 'main-screen-5')"
                     onmouseleave="resetMainImage('main-screen-5')"
                   >
                     <img src="/assets/card_capsule/slide5/mini_slide_4.jpg" />
@@ -278,25 +303,25 @@
                 </div>
                 <div class="mini-screenshots">
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-6')"
+                    onmouseenter="changeMainImage(this, 'main-screen-6')"
                     onmouseleave="resetMainImage('main-screen-6')"
                   >
                     <img src="/assets/card_capsule/slide6/mini_slide_1.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-6')"
+                    onmouseenter="changeMainImage(this, 'main-screen-6')"
                     onmouseleave="resetMainImage('main-screen-6')"
                   >
                     <img src="/assets/card_capsule/slide6/mini_slide_2.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-6')"
+                    onmouseenter="changeMainImage(this, 'main-screen-6')"
                     onmouseleave="resetMainImage('main-screen-6')"
                   >
                     <img src="/assets/card_capsule/slide6/mini_slide_3.jpg" />
                   </div>
                   <div
-                    onmouseenter ="changeMainImage(this, 'main-screen-6')"
+                    onmouseenter="changeMainImage(this, 'main-screen-6')"
                     onmouseleave="resetMainImage('main-screen-6')"
                   >
                     <img src="/assets/card_capsule/slide6/mini_slide_4.jpg" />
@@ -321,6 +346,11 @@
             <div></div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="content-section">
+      <div class="main-page-content">
+        <h2 class="page-header">Special Offers</h2>
       </div>
     </div>
     <!-- start main hover -->
