@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/motiva-sans" />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="styles.css" />
     <title>Cody Hubbard</title>
@@ -23,51 +24,97 @@
       <div class="main-page-content">
         <h2 class="page-header">Featured & Recommended</h2>
         <div class="carousel-container main">
-          <div class="carousel-items">
+          <div
+            onmouseenter ="showGlobalHover()"
+            onmouseleave="hideGlobalHover()"
+            class="carousel-items"
+          >
             <div class="main-capsule">
               <div class="capsule">
-                <img class="screenshot" src="/assets/card_capsule/slide1/main_slide.jpg" />
+                <img
+                  id="main-screen-1"
+                  class="screenshot"
+                  src="/assets/card_capsule/slide1/main_slide.jpg"
+                />
+                <img
+                  id="main-screen-1-overlay"
+                  class="screenshot overlay"
+                  src=""
+                />
               </div>
               <div class="info">
                 <div class="app-name">
                   <div>This is the app name</div>
                 </div>
                 <div class="mini-screenshots">
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-1')"
+                    onmouseleave="resetMainImage('main-screen-1')"
+                  >
                     <img src="/assets/card_capsule/slide1/mini_slide_1.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-1')"
+                    onmouseleave="resetMainImage('main-screen-1')"
+                  >
                     <img src="/assets/card_capsule/slide1/mini_slide_2.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-1')"
+                    onmouseleave="resetMainImage('main-screen-1')"
+                  >
                     <img src="/assets/card_capsule/slide1/mini_slide_3.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-1')"
+                    onmouseleave="resetMainImage('main-screen-1')"
+                  >
                     <img src="/assets/card_capsule/slide1/mini_slide_4.jpg" />
                   </div>
-                  <div class="reason"></div>
                 </div>
+                <div class="reason"></div>
               </div>
             </div>
             <div class="main-capsule">
               <div class="capsule">
-                <img class="screenshot" src="/assets/card_capsule/slide2/main_slide.jpg" />
+                <img
+                  id="main-screen-2"
+                  class="screenshot"
+                  src="/assets/card_capsule/slide2/main_slide.jpg"
+                />
+                <img
+                  id="main-screen-2-overlay"
+                  class="screenshot overlay"
+                  src=""
+                />
               </div>
               <div class="info">
                 <div class="app-name">
                   <div>This is the app name</div>
                 </div>
                 <div class="mini-screenshots">
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-2')"
+                    onmouseleave="resetMainImage('main-screen-2')"
+                  >
                     <img src="/assets/card_capsule/slide2/mini_slide_1.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-2')"
+                    onmouseleave="resetMainImage('main-screen-2')"
+                  >
                     <img src="/assets/card_capsule/slide2/mini_slide_2.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-2')"
+                    onmouseleave="resetMainImage('main-screen-2')"
+                  >
                     <img src="/assets/card_capsule/slide2/mini_slide_3.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-2')"
+                    onmouseleave="resetMainImage('main-screen-2')"
+                  >
                     <img src="/assets/card_capsule/slide2/mini_slide_4.jpg" />
                   </div>
                   <div class="reason"></div>
@@ -76,23 +123,44 @@
             </div>
             <div class="main-capsule">
               <div class="capsule">
-                <img class="screenshot" src="/assets/card_capsule/slide3/main_slide.jpg" />
+                <img
+                  id="main-screen-3"
+                  class="screenshot"
+                  src="/assets/card_capsule/slide3/main_slide.jpg"
+                />
+                <img
+                  id="main-screen-3-overlay"
+                  class="screenshot overlay"
+                  src=""
+                />
               </div>
               <div class="info">
                 <div class="app-name">
                   <div>This is the app name</div>
                 </div>
                 <div class="mini-screenshots">
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-3')"
+                    onmouseleave="resetMainImage('main-screen-3')"
+                  >
                     <img src="/assets/card_capsule/slide3/mini_slide_1.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-3')"
+                    onmouseleave="resetMainImage('main-screen-3')"
+                  >
                     <img src="/assets/card_capsule/slide3/mini_slide_2.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-3')"
+                    onmouseleave="resetMainImage('main-screen-3')"
+                  >
                     <img src="/assets/card_capsule/slide3/mini_slide_3.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-3')"
+                    onmouseleave="resetMainImage('main-screen-3')"
+                  >
                     <img src="/assets/card_capsule/slide3/mini_slide_4.jpg" />
                   </div>
                   <div class="reason"></div>
@@ -101,23 +169,44 @@
             </div>
             <div class="main-capsule">
               <div class="capsule">
-                <img class="screenshot" src="/assets/card_capsule/slide4/main_slide.jpg" />
+                <img
+                  id="main-screen-4"
+                  class="screenshot"
+                  src="/assets/card_capsule/slide4/main_slide.jpg"
+                />
+                <img
+                  id="main-screen-4-overlay"
+                  class="screenshot overlay"
+                  src=""
+                />
               </div>
               <div class="info">
                 <div class="app-name">
                   <div>This is the app name</div>
                 </div>
                 <div class="mini-screenshots">
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-4')"
+                    onmouseleave="resetMainImage('main-screen-4')"
+                  >
                     <img src="/assets/card_capsule/slide4/mini_slide_1.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-4')"
+                    onmouseleave="resetMainImage('main-screen-4')"
+                  >
                     <img src="/assets/card_capsule/slide4/mini_slide_2.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-4')"
+                    onmouseleave="resetMainImage('main-screen-4')"
+                  >
                     <img src="/assets/card_capsule/slide4/mini_slide_3.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-4')"
+                    onmouseleave="resetMainImage('main-screen-4')"
+                  >
                     <img src="/assets/card_capsule/slide4/mini_slide_4.jpg" />
                   </div>
                   <div class="reason"></div>
@@ -126,23 +215,44 @@
             </div>
             <div class="main-capsule">
               <div class="capsule">
-                <img class="screenshot" src="/assets/card_capsule/slide5/main_slide.jpg" />
+                <img
+                  id="main-screen-5"
+                  class="screenshot"
+                  src="/assets/card_capsule/slide5/main_slide.jpg"
+                />
+                <img
+                  id="main-screen-5-overlay"
+                  class="screenshot overlay"
+                  src=""
+                />
               </div>
               <div class="info">
                 <div class="app-name">
                   <div>This is the app name</div>
                 </div>
                 <div class="mini-screenshots">
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-5')"
+                    onmouseleave="resetMainImage('main-screen-5')"
+                  >
                     <img src="/assets/card_capsule/slide5/mini_slide_1.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-5')"
+                    onmouseleave="resetMainImage('main-screen-5')"
+                  >
                     <img src="/assets/card_capsule/slide5/mini_slide_2.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-5')"
+                    onmouseleave="resetMainImage('main-screen-5')"
+                  >
                     <img src="/assets/card_capsule/slide5/mini_slide_3.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-5')"
+                    onmouseleave="resetMainImage('main-screen-5')"
+                  >
                     <img src="/assets/card_capsule/slide5/mini_slide_4.jpg" />
                   </div>
                   <div class="reason"></div>
@@ -151,23 +261,44 @@
             </div>
             <div class="main-capsule">
               <div class="capsule">
-                <img class="screenshot" src="/assets/card_capsule/slide6/main_slide.jpg" />
+                <img
+                  id="main-screen-6"
+                  class="screenshot"
+                  src="/assets/card_capsule/slide6/main_slide.jpg"
+                />
+                <img
+                  id="main-screen-6-overlay"
+                  class="screenshot overlay"
+                  src=""
+                />
               </div>
               <div class="info">
                 <div class="app-name">
                   <div>This is the app name</div>
                 </div>
                 <div class="mini-screenshots">
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-6')"
+                    onmouseleave="resetMainImage('main-screen-6')"
+                  >
                     <img src="/assets/card_capsule/slide6/mini_slide_1.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-6')"
+                    onmouseleave="resetMainImage('main-screen-6')"
+                  >
                     <img src="/assets/card_capsule/slide6/mini_slide_2.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-6')"
+                    onmouseleave="resetMainImage('main-screen-6')"
+                  >
                     <img src="/assets/card_capsule/slide6/mini_slide_3.jpg" />
                   </div>
-                  <div>
+                  <div
+                    onmouseenter ="changeMainImage(this, 'main-screen-6')"
+                    onmouseleave="resetMainImage('main-screen-6')"
+                  >
                     <img src="/assets/card_capsule/slide6/mini_slide_4.jpg" />
                   </div>
                   <div class="reason"></div>
@@ -190,6 +321,86 @@
             <div></div>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- start main hover -->
+    <div class="main-hover hover" id="global-hover">
+      <div class="hover-box">
+        <div class="content">
+          <div id="hover-app-1">
+            <div class="hover-top-area" style="display: none"></div>
+            <h4 class="hover-title">Title 1</h4>
+            <div class="hover-release">
+              <span>Released: Feb 15, 2023</span>
+              <div></div>
+            </div>
+            <div class="hover-summary">
+              <p>
+                this is a nice test description for my test item that will
+                detail the project, talk about its implementation, and useage.
+              </p>
+              <!-- <div
+                class="screenshot"
+                style="
+                  background-image: url(https://cdn.cloudflare.steamstatic.com/steam/apps/1649240/ss_3c260834df0c87cfc9ac1b457d0ec0eb3b9f367c.600x338.jpg?t=1676476643);
+                "
+              ></div>
+              <div
+                class="screenshot"
+                style="
+                  background-image: url(https://cdn.cloudflare.steamstatic.com/steam/apps/1649240/ss_a91854c29cee0b4975862d174f03ff374ae5e26c.600x338.jpg?t=1676476643);
+                "
+              ></div>
+              <div
+                class="screenshot"
+                style="
+                  background-image: url(https://cdn.cloudflare.steamstatic.com/steam/apps/1649240/ss_e15da2a195556b773ba8a982051f55de50d79a75.600x338.jpg?t=1676476643);
+                "
+              ></div>
+              <div
+                class="screenshot"
+                style="
+                  background-image: url(https://cdn.cloudflare.steamstatic.com/steam/apps/1649240/ss_ea2f5b9dd34cd18e05970343edfb36ed0dade475.600x338.jpg?t=1676476643);
+                "
+              ></div> -->
+            </div>
+            <div class="hover-body">
+              <div class="hover-review-summary">
+                <div class="title">Overall user reviews:</div>
+                <span class="game-review-summary positive">Very Positive</span>
+                (1,488 reviews)
+              </div>
+              <div style="clear: left"></div>
+            </div>
+            <div class="hover-body">
+              User tags:
+              <div class="hover-tag-row">
+                <div class="app-tag">Action</div>
+                <div class="app-tag">Roguelike</div>
+                <div class="app-tag">Action Roguelike</div>
+                <div class="app-tag">Singleplayer</div>
+                <div class="app-tag">Co-op</div>
+                <div class="app-tag">Bullet Hell</div>
+                <div class="app-tag">Space</div>
+                <div class="app-tag">Online Co-Op</div>
+                <div class="app-tag">Female Protagonist</div>
+                <div class="app-tag">Shooter</div>
+              </div>
+            </div>
+            <div class="rule"></div>
+            <div class="hover-body-block">1 friend owns this game:</div>
+            <div class="friend-blocks-row hover-friends-blocks">
+              <div class="playerAvatar offline">
+                <img
+                  id="friend_avatar_img_69281084"
+                  src="/assets/card_capsule/slide1/mini_slide_1.jpg"
+                />
+              </div>
+              <div style="clear: left"></div>
+            </div>
+          </div>
+        </div>
+        <div class="hover-arrow-left"></div>
       </div>
     </div>
     <script src="main.js"></script>
