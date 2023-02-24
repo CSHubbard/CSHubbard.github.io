@@ -50,8 +50,20 @@ h4 {
   font-weight: bold;
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: DodgerBlue;
+}
+
 .background {
   background-color: var(--gpStoreDarkerGrey);
+}
+
+.main-page-content {
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
 }
 
 /* header css start */
@@ -156,7 +168,7 @@ div.page-area {
   margin-right: 5px;
 }
 
-.playerAvatar.online{
+.playerAvatar.online {
   display: inline-flex;
   background-color: #57cbde;
   background: -webkit-linear-gradient(
@@ -176,6 +188,36 @@ div.page-area {
 /* header css end */
 
 /* main page gutter */
+.main-page-gutter {
+  position: absolute;
+  left: 0;
+  width: 0;
+  z-index: 2;
+  display: block;
+  width: 210px;
+  overflow: hidden;
+  padding-top: 20px;
+}
+
+.gutter-block {
+  width: 210px;
+  margin-bottom: 20px;
+  border: none;
+  background: none;
+  padding-left: 0px;
+}
+
+.gutter-header {
+  line-height: 16px;
+  margin: 7px 0;
+  color: #c6d4df;
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+.gutter-profile-pic {
+  max-width: 100%;
+}
 
 /* main page gutter end */
 
@@ -184,11 +226,6 @@ div.page-area {
   background: url(/assets/cluster_bg.png) bottom center no-repeat;
 }
 
-.main-page-content {
-  position: relative;
-  width: 940px;
-  margin: 0 auto;
-}
 
 .content-section {
   padding-left: 2%;
