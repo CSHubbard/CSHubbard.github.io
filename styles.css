@@ -7,6 +7,7 @@ html {
   --white: #ffffff;
   --bodyTextWhite: #c6d4df;
   --headerTextWhite: #b8b6b4;
+  --btn-border-grey: #767e88;
   --headerDarkBlue1: #171a21;
   --gpStoreDarkerGrey: #1b2838;
   --gpStoreDarkestGrey: #000f18;
@@ -67,6 +68,40 @@ h4 {
   margin: 0 auto;
 }
 
+.btn-transparent-white {
+  border-radius: 2px;
+  border: 1px solid var(--btn-border-grey);
+  padding: 1px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: #fff !important;
+  background: transparent;
+}
+
+.btn-transparent-white:hover {
+  border: 1px solid var(--white);
+}
+
+.btn-uppercase > span {
+  text-transform: uppercase;
+}
+
+.btn-small > span {
+  padding: 0 15px;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+h2 span.right {
+  float: right;
+  text-transform: none;
+  letter-spacing: normal;
+  display: inline-block;
+  position: relative;
+  top: -3px;
+}
+
 /* header css start */
 #global-header {
   background: var(--headerDarkBlue1);
@@ -75,8 +110,6 @@ h4 {
   font-family: "Motiva Sans", Sans-serif;
   font-weight: normal;
   font-size: 14px;
-  padding-left: 16px;
-  padding-right: 16px;
 }
 
 #footer,
@@ -159,7 +192,7 @@ div.page-area {
   position: relative;
   border-radius: 0;
   border: none;
-  padding: 1px;
+  padding: 2px;
   overflow: hidden;
   overflow: clip;
 }
@@ -208,7 +241,8 @@ div.page-area {
   padding-left: 0px;
 }
 
-.gutter-header, .gutter-item {
+.gutter-header,
+.gutter-item {
   line-height: 16px;
   margin: 7px 0;
 }
