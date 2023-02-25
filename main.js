@@ -16,7 +16,7 @@ function nextSlide() {
 
 function carousel() {
   showSlide(slideIndex + 1);
-  slideTimeoutID = setTimeout(carousel, 6000); // Change image every 6 seconds
+ slideTimeoutID = setTimeout(carousel, 6000); // Change image every 6 seconds
 }
 
 function showSlide(n) {
@@ -57,7 +57,6 @@ function resetMainImage(mainImageID) {
 
 let globalHoverID;
 function showGlobalHover() {
-  console.log("entered");
   clearTimeout(slideTimeoutID);
   globalHoverID = setTimeout(() => {
     document.getElementById(`global-hover`).style.opacity = 1;
@@ -65,7 +64,6 @@ function showGlobalHover() {
 }
 
 function hideGlobalHover() {
-  console.log("exited");
   clearTimeout(globalHoverID);
   document.getElementById(`global-hover`).style.opacity = 0;
   slideTimeoutID = setTimeout(carousel, 6000); // Change image every 6 seconds
