@@ -83,7 +83,6 @@ h4 {
 .btn-transparent-white {
   border-radius: 2px;
   border: 1px solid var(--btn-border-grey);
-  padding: 1px;
   display: inline-block;
   cursor: pointer;
   text-decoration: none !important;
@@ -105,13 +104,13 @@ h4 {
   line-height: 20px;
 }
 
-h2 span.right {
+h2 span.right-button {
   float: right;
   text-transform: none;
   letter-spacing: normal;
   display: inline-block;
   position: relative;
-  top: -3px;
+  top: -5px;
 }
 
 /* header css start */
@@ -304,17 +303,6 @@ div.gutter-item {
   padding-top: 20px;
 }
 
-.content-header {
-  font-family: "Motiva Sans", Sans-serif;
-  font-size: 14px;
-  text-transform: uppercase;
-  color: var(--white);
-  margin: 0 0 10px;
-  letter-spacing: 0.03em;
-  font-weight: normal;
-  padding-top: 2px;
-}
-
 .carousel-container {
   position: relative;
 }
@@ -343,6 +331,11 @@ div.gutter-item {
 .carousel-container.experience .carousel-items {
   height: 390px;
   overflow: visible;
+}
+
+.carousel-container .carousel-items > * {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .carousel-container .carousel-items > *.focus {
@@ -751,6 +744,10 @@ div.main-hover {
   margin-right: 11px;
 }
 
+.carousel-container.experience .carousel-items > * > div:last-child {
+  margin-right: 0px;
+}
+
 .experience-group {
   display: flex;
   transition: opacity 400ms;
@@ -761,6 +758,25 @@ div.main-hover {
   height: 390px;
   box-shadow: 0 0 5px #000000;
   position: relative;
+  cursor: pointer;
+}
+
+.experience-area-spotlight-col {
+  height: 390px;
+  position: relative;
+}
+
+.experience-area-spotlight-col .spotlight-col-item {
+  background-image: url(/assets/background_spotlight.jpg);
+  box-shadow: 0 0 5px #000000;
+  height: 187.5px;
+  margin-bottom: 15px;
+  position: relative;
+  cursor: pointer;
+}
+
+.experience-area-spotlight-col > .spotlight-col-item:last-child {
+  margin-bottom: 0px;
 }
 
 .spotlight-img {
@@ -769,7 +785,6 @@ div.main-hover {
   width: 306px;
   overflow: hidden;
 }
-
 
 .spotlight-content {
   padding: 8px 16px 12px 16px;
