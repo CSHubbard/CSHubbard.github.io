@@ -14,11 +14,7 @@ html {
   --gpStoreBlue: #66c0f4;
   --gpAvatarOnlineBlue: #57cbde;
 
-  --pwBackgroundGradient: linear-gradient(
-    180deg,
-    var(--gpStoreDarkGrey) 0%,
-    var(--gpStoreDarkerGrey) 80%
-  );
+  --pwBackgroundGradient: linear-gradient(180deg, var(--gpStoreDarkGrey) 0%, var(--gpStoreDarkerGrey) 80%);
 }
 
 body {
@@ -71,7 +67,7 @@ h4 {
 }
 
 .background {
-  background-color: var(--gpStoreDarkerGrey);
+  background: url(assets/colored_body_top.png) center top no-repeat var(--gpStoreDarkerGrey);
 }
 
 .main-page-content {
@@ -216,16 +212,8 @@ div.page-area {
 .playerAvatar.online {
   display: inline-flex;
   background-color: var(--gpAvatarOnlineBlue);
-  background: -webkit-linear-gradient(
-    top,
-    rgba(83, 164, 196, 1) 5%,
-    rgba(69, 128, 151, 1) 95%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(83, 164, 196, 1) 5%,
-    rgba(69, 128, 151, 1) 95%
-  );
+  background: -webkit-linear-gradient(top, rgba(83, 164, 196, 1) 5%, rgba(69, 128, 151, 1) 95%);
+  background: linear-gradient(to bottom, rgba(83, 164, 196, 1) 5%, rgba(69, 128, 151, 1) 95%);
   filter: none;
   height: fit-content;
   width: fit-content;
@@ -506,56 +494,24 @@ div.gutter-item {
 
 .carousel-container .arrow.left {
   left: -46px;
-  background: -webkit-linear-gradient(
-    left,
-    rgba(0, 0, 0, 0.3) 5%,
-    rgba(0, 0, 0, 0) 95%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.3) 5%,
-    rgba(0, 0, 0, 0) 95%
-  );
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0) 95%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 5%, rgba(0, 0, 0, 0) 95%);
 }
 
 .carousel-container .arrow.left:hover {
-  background: -webkit-linear-gradient(
-    left,
-    rgba(171, 218, 244, 0.3) 5%,
-    rgba(171, 218, 244, 0) 95%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(171, 218, 244, 0.3) 5%,
-    rgba(171, 218, 244, 0) 95%
-  );
+  background: -webkit-linear-gradient(left, rgba(171, 218, 244, 0.3) 5%, rgba(171, 218, 244, 0) 95%);
+  background: linear-gradient(to right, rgba(171, 218, 244, 0.3) 5%, rgba(171, 218, 244, 0) 95%);
 }
 
 .carousel-container .arrow.right {
   right: -46px;
-  background: -webkit-linear-gradient(
-    left,
-    rgba(0, 0, 0, 0) 5%,
-    rgba(0, 0, 0, 0.3) 95%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0) 5%,
-    rgba(0, 0, 0, 0.3) 95%
-  );
+  background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.3) 95%);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 0.3) 95%);
 }
 
 .carousel-container .arrow.right:hover {
-  background: -webkit-linear-gradient(
-    left,
-    rgba(171, 218, 244, 0) 5%,
-    rgba(171, 218, 244, 0.3) 95%
-  );
-  background: linear-gradient(
-    to right,
-    rgba(171, 218, 244, 0) 5%,
-    rgba(171, 218, 244, 0.3) 95%
-  );
+  background: -webkit-linear-gradient(left, rgba(171, 218, 244, 0) 5%, rgba(171, 218, 244, 0.3) 95%);
+  background: linear-gradient(to right, rgba(171, 218, 244, 0) 5%, rgba(171, 218, 244, 0.3) 95%);
 }
 
 .carousel-container .arrow > div {
@@ -574,14 +530,15 @@ div.gutter-item {
   pointer-events: none;
   opacity: 0;
   transition: opacity 300ms;
+  display: none;
 }
 
 div.main-hover {
   opacity: 1;
   position: absolute;
-  top: 16px;
+  /* top: 16px;
   right: -316px;
-  width: 300px;
+  width: 300px; */
   z-index: 1526;
   padding: 5px 12px 0 12px;
 }
@@ -594,38 +551,12 @@ div.main-hover {
 
 .hover-box {
   background: rgb(227, 234, 239);
-  background: -moz-linear-gradient(
-    top,
-    rgba(227, 234, 239, 1) 0%,
-    rgba(199, 213, 224, 1) 100%
-  );
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0%, rgba(227, 234, 239, 1)),
-    color-stop(100%, rgba(199, 213, 224, 1))
-  );
-  background: -webkit-linear-gradient(
-    top,
-    rgba(227, 234, 239, 1) 0%,
-    rgba(199, 213, 224, 1) 100%
-  );
-  background: -o-linear-gradient(
-    top,
-    rgba(227, 234, 239, 1) 0%,
-    rgba(199, 213, 224, 1) 100%
-  );
-  background: -ms-linear-gradient(
-    top,
-    rgba(227, 234, 239, 1) 0%,
-    rgba(199, 213, 224, 1) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(227, 234, 239, 1) 0%,
-    rgba(199, 213, 224, 1) 100%
-  );
+  background: -moz-linear-gradient(top, rgba(227, 234, 239, 1) 0%, rgba(199, 213, 224, 1) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(227, 234, 239, 1)), color-stop(100%, rgba(199, 213, 224, 1)));
+  background: -webkit-linear-gradient(top, rgba(227, 234, 239, 1) 0%, rgba(199, 213, 224, 1) 100%);
+  background: -o-linear-gradient(top, rgba(227, 234, 239, 1) 0%, rgba(199, 213, 224, 1) 100%);
+  background: -ms-linear-gradient(top, rgba(227, 234, 239, 1) 0%, rgba(199, 213, 224, 1) 100%);
+  background: linear-gradient(to bottom, rgba(227, 234, 239, 1) 0%, rgba(199, 213, 224, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e3eaef', endColorstr='#c7d5e0',GradientType=0 );
   color: #30455a;
   font-size: 12px;
@@ -726,8 +657,7 @@ div.main-hover {
   margin-bottom: 8px;
 }
 
-.hover .hover-arrow-left,
-.hover .hover-arrow-right {
+.hover #hover-arrow {
   background-position: bottom;
   width: 15px;
   height: 15px;
