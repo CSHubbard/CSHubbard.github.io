@@ -530,15 +530,13 @@ div.gutter-item {
   pointer-events: none;
   opacity: 0;
   transition: opacity 300ms;
-  display: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
 }
 
 div.main-hover {
-  opacity: 1;
-  position: absolute;
-  /* top: 16px;
-  right: -316px;
-  width: 300px; */
+  width: 306px;
   z-index: 1526;
   padding: 5px 12px 0 12px;
 }

@@ -74,10 +74,8 @@ function showGlobalHover(hoveredElement) {
     // 48px is how far down the hovered element we want the arrow to always display at.
     hoverArrow.style.top = "48px";
 
-    globalHover.style.opacity = 1;
     globalHover.style.top = hoverFloatTop + "px";
     globalHover.style.left = hoverFloatLeft + "px";
-    globalHover.style.display = "block";
     if (originalWindowHeight < window.document.documentElement.scrollHeight) {
       let topOffset = originalWindowHeight - window.document.documentElement.scrollHeight;
       globalHover.style.top = topOffset + hoverFloatTop + "px";
@@ -85,12 +83,12 @@ function showGlobalHover(hoveredElement) {
       // hovered element.
       hoverArrow.style.top = topOffset * -1 + 48 + "px";
     }
+    globalHover.style.opacity = 1;
   }, 300);
 }
 
 function hideGlobalHover(hoveredElement) {
   clearTimeout(globalHoverID);
-  globalHover.style.display = "none";
   globalHover.style.opacity = 0;
   if (hoveredElement.id == "main-capsule-container") {
     slideTimeoutID = setTimeout(carousel, 6000); // Change image every 6 seconds
