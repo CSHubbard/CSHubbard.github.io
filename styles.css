@@ -139,7 +139,7 @@ div.page-area {
 
 #global-header .container {
   position: absolute;
-  left: 200px;
+  left: 600px;
 }
 
 #global-header .container .menuitem {
@@ -165,8 +165,18 @@ div.page-area {
   float: left;
   padding-top: 30px;
   margin-right: 40px;
-  width: 176px;
-  height: 44px;
+  display: flex;
+  align-items: center;
+  /* width: 176px; */
+  /* height: 44px; */
+}
+
+#global-header div.logo .name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #c5c3c0;
+  text-transform: uppercase;
+  pointer-events: none;
 }
 
 #global-accent {
@@ -272,6 +282,16 @@ div.gutter-item {
 .gutter-item.gutter-profile {
   margin-top: 0px;
   margin: 0 0 14px 0;
+}
+
+.gutter-item .icon {
+  /* background-color: #458286; */
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 4px;
 }
 
 .gutter-profile-pic {
