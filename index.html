@@ -12,8 +12,11 @@
     <div id="global-header">
       <div class="content">
         <div class="logo">
-          <img src="/assets/logo_steam.png" width="154" height="44" />
-          <div class="name">Cody's website</div>
+          <img src="/assets/logo_steam2.png" width="154" height="44" />
+          <div class="name">
+            Cody Hubbard
+            <div class="name-subtext">Full Stack Developer</div>
+          </div>
         </div>
         <div class="container">
           <a class="menuitem" href="https://www.linkedin.com/in/codyshubbard/" target="_blank"> LinkedIn </a>
@@ -35,10 +38,6 @@
             <div class="gutter-header gutter-profile">
               <img class="gutter-profile-pic" src="/assets/Profile.png" />
               <br />
-              <span>Cody Hubbard</span>
-            </div>
-            <div class="gutter-items">
-              <div class="gutter-item gutter-profile">Full Stack Developer</div>
             </div>
             <div class="gutter-header">Programming Languages</div>
             <div class="gutter-items">
@@ -68,12 +67,20 @@
               <div class="gutter-item"><img class="icon" src="/assets/logos/AdobeXD.png" /><span> Adobe XD</span></div>
               <div class="gutter-item"><img class="icon" src="/assets/logos/postman.png" /><span> Postman</span></div>
             </div>
-            <div class="gutter-header pad">Misc</div>
+            <div class="gutter-header pad">Misc Technical</div>
             <div class="gutter-items">
               <div class="gutter-item"><img class="icon" src="/assets/logos/csshtml.png" /><span> CSS & HTML</span></div>
               <div class="gutter-item"><img class="icon" src="/assets/logos/xml.png" /><span> XML</span></div>
               <div class="gutter-item"><img class="icon" src="/assets/logos/api.png" /><span> RESTful APIs</span></div>
             </div>
+            <!-- <div class="gutter-header pad">Soft Skills</div>
+            <div class="gutter-items">
+              <div class="gutter-item"><img class="icon" src="" /><span> Good Communicator</span></div>
+              <div class="gutter-item"><img class="icon" src="" /><span> Self Starter</span></div>
+              <div class="gutter-item"><img class="icon" src="" /><span> UI Design</span></div>
+              <div class="gutter-item"><img class="icon" src="" /><span> Project Management</span></div>
+              <div class="gutter-item"><img class="icon" src="" /><span> Requiremnts Gathering</span></div>
+            </div> -->
           </div>
         </div>
         <h2 class="content-header">
@@ -269,7 +276,7 @@
         <div class="carousel-container experience">
           <div class="carousel-items">
             <div class="experience-group focus">
-              <div class="experience-area-spotlight" onmouseenter="showGlobalHover(this)" onmouseleave="hideGlobalHover(this)">
+              <div class="experience-area-spotlight" onmouseenter="showGlobalHover(this, 'hover-app-7')" onmouseleave="hideGlobalHover(this)">
                 <div class="spotlight-img">
                   <a href="">
                     <img src="/assets/experience/exp_sample_1.png" />
@@ -277,8 +284,8 @@
                 </div>
 
                 <div class="spotlight-content">
-                  <h2>Free Weekend</h2>
-                  <div class="spotlight-body">Offer ends Mar 2 @ 10:00am.</div>
+                  <h2>University of California,Los Angeles<br /></h2>
+                  <div class="spotlight-body">Bachelors of Science, Mathematics of Computation</div>
                 </div>
               </div>
               <div class="experience-area-spotlight" onmouseenter="showGlobalHover(this)" onmouseleave="hideGlobalHover(this)">
@@ -327,8 +334,8 @@
     </div>
     <div class="main-hover hover" id="global-hover">
       <div class="hover-box">
-        <div class="content">
-          <div id="hover-app-1">
+        <div id="main-hover-content" class="content">
+          <div id="hover-app-1" class="hover-app-content">
             <div class="hover-top-area" style="display: none"></div>
             <h4 class="hover-title">Title 1</h4>
             <div class="hover-release">
@@ -337,30 +344,52 @@
             </div>
             <div class="hover-summary">
               <p>this is a nice test description for my test item that will detail the project, talk about its implementation, and useage.</p>
-              <!-- <div
-            class="screenshot"
-            style="
-              background-image: url(https://cdn.cloudflare.steamstatic.com/steam/apps/1649240/ss_3c260834df0c87cfc9ac1b457d0ec0eb3b9f367c.600x338.jpg?t=1676476643);
-            "
-          ></div>
-          <div
-            class="screenshot"
-            style="
-              background-image: url(https://cdn.cloudflare.steamstatic.com/steam/apps/1649240/ss_a91854c29cee0b4975862d174f03ff374ae5e26c.600x338.jpg?t=1676476643);
-            "
-          ></div>
-          <div
-            class="screenshot"
-            style="
-              background-image: url(https://cdn.cloudflare.steamstatic.com/steam/apps/1649240/ss_e15da2a195556b773ba8a982051f55de50d79a75.600x338.jpg?t=1676476643);
-            "
-          ></div>
-          <div
-            class="screenshot"
-            style="
-              background-image: url(https://cdn.cloudflare.steamstatic.com/steam/apps/1649240/ss_ea2f5b9dd34cd18e05970343edfb36ed0dade475.600x338.jpg?t=1676476643);
-            "
-          ></div> -->
+            </div>
+            <div class="hover-body">
+              <div class="hover-review-summary">
+                <div class="title">Overall user reviews:</div>
+                <span class="game-review-summary positive">Very Positive</span>
+                (1,488 reviews)
+              </div>
+              <div style="clear: left"></div>
+            </div>
+            <div class="hover-body">
+              User tags:
+              <div class="hover-tag-row">
+                <div class="app-tag">Action</div>
+                <div class="app-tag">Roguelike</div>
+                <div class="app-tag">Action Roguelike</div>
+                <div class="app-tag">Singleplayer</div>
+                <div class="app-tag">Co-op</div>
+                <div class="app-tag">Bullet Hell</div>
+                <div class="app-tag">Space</div>
+                <div class="app-tag">Online Co-Op</div>
+                <div class="app-tag">Female Protagonist</div>
+                <div class="app-tag">Shooter</div>
+              </div>
+            </div>
+            <div class="rule"></div>
+            <div class="hover-body-block">1 friend owns this game:</div>
+            <div class="friend-blocks-row hover-friends-blocks">
+              <div class="playerAvatar offline">
+                <img id="friend_avatar_img_69281084" src="/assets/card_capsule/slide1/mini_slide_1.jpg" />
+              </div>
+              <div style="clear: left"></div>
+            </div>
+          </div>
+          <div id="hover-app-7" class="hover-app-content">
+            <div class="hover-top-area" style="display: none"></div>
+            <h4 class="hover-title">University of California, Los Angeles</h4>
+            <span>Bachelors of Science, Mathematics of Computation</span>
+            <div class="hover-release">
+              <span>June 2018</span>
+              <div></div>
+            </div>
+            <div class="hover-summary">
+              <p>
+                Coursework Includes: Software Engineering, Operating Systems, Algorithms, Computer Graphics, Machine Learning, Linear Algebra, Applied Numerical Methods, Analysis, Ordinary Differential Equations, Mathematical Optimization,
+                Game Theory, Complex Analysis.
+              </p>
             </div>
             <div class="hover-body">
               <div class="hover-review-summary">

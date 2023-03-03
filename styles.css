@@ -172,11 +172,22 @@ div.page-area {
 }
 
 #global-header div.logo .name {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: 600;
   color: #c5c3c0;
   text-transform: uppercase;
   pointer-events: none;
+}
+
+#global-header div.logo .name-subtext {
+  font-size: 11px;
+  font-weight: 400;
+  margin-left: 4px;
+  margin-top: 4px;
+  color: #c5c3c0;
+  text-transform: uppercase;
+  pointer-events: none;
+  position: absolute;
 }
 
 #global-accent {
@@ -610,6 +621,12 @@ div.main-hover {
   font-size: 10px;
   display: flex;
   justify-content: space-between;
+}
+
+.hover-box .hover-app-content {
+  display: none;
+  opacity: 0;
+  transition: opacity 400ms;
 }
 
 .hover-body {

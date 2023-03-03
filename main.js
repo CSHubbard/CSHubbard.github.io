@@ -56,11 +56,31 @@ function resetMainImage(mainImageID) {
 }
 
 let globalHoverID;
+let globalHoverContent = null;
 let globalHover = document.getElementById(`global-hover`);
-function showGlobalHover(hoveredElement) {
-  // todo: only cancel carosuel if hovering carosel item.
+function showGlobalHover(hoveredElement, hoverTarget = null) {
+  // to ensure the hover hide transition works correctlythe hover content is kept track of,
+  //  and sent to display:one just before the  new hover contnet is to be displayed.
+  if (globalHoverContent) {
+    globalHoverContent.style.display = "none";
+    globalHoverContent = null;
+  }
+
   if (hoveredElement.id == "main-capsule-container") {
     clearTimeout(slideTimeoutID);
+    // slides dont have their own hover target becasue the hover event it triggered
+    // on the high level container, so there is some special logic to select the corrent
+    // hover content.
+    globalHoverContent = document.getElementById("hover-app-" + slideIndex);
+  }
+
+  if (hoverTarget != null) {
+    globalHoverContent = globalHoverContent = document.getElementById(hoverTarget);
+  }
+
+  if (globalHoverContent) {
+    globalHoverContent.style.display = "block";
+    globalHoverContent.style.opacity = 1;
   }
 
   // calculate the necessary top and left to have the global-hover float direct next to the hovered element
@@ -90,6 +110,7 @@ function showGlobalHover(hoveredElement) {
 function hideGlobalHover(hoveredElement) {
   clearTimeout(globalHoverID);
   globalHover.style.opacity = 0;
+  globalHoverContent.style.opacity = 0;
   if (hoveredElement.id == "main-capsule-container") {
     slideTimeoutID = setTimeout(carousel, 6000); // Change image every 6 seconds
   }
