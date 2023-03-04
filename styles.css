@@ -642,10 +642,16 @@ div.main-hover {
 }
 
 .hover-summary {
-  font-size: 12px;
+  font-size: 13px;
   position: relative;
   height: 153px;
   margin: 5px 0;
+  border-radius: 2px;
+  padding: 8px;
+  color: #c6d4df;
+  background:
+  linear-gradient(to right top, rgba(60, 80, 102, 1) 0%, rgba(95, 97, 101, 1) 100%),
+  linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
 }
 
 .review-summary.positive {

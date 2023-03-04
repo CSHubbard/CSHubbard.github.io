@@ -73,14 +73,12 @@
               <div class="gutter-item"><img class="icon" src="/assets/logos/xml.png" /><span> XML</span></div>
               <div class="gutter-item"><img class="icon" src="/assets/logos/api.png" /><span> RESTful APIs</span></div>
             </div>
-            <!-- <div class="gutter-header pad">Soft Skills</div>
+            <div class="gutter-header pad">Misc Skills</div>
             <div class="gutter-items">
-              <div class="gutter-item"><img class="icon" src="" /><span> Good Communicator</span></div>
-              <div class="gutter-item"><img class="icon" src="" /><span> Self Starter</span></div>
-              <div class="gutter-item"><img class="icon" src="" /><span> UI Design</span></div>
-              <div class="gutter-item"><img class="icon" src="" /><span> Project Management</span></div>
-              <div class="gutter-item"><img class="icon" src="" /><span> Requiremnts Gathering</span></div>
-            </div> -->
+              <div class="gutter-item"><img class="icon" src="/assets/Icons/pages.png" /><span> UI Design</span></div>
+              <div class="gutter-item"><img class="icon" src="/assets/Icons/circles.png" /><span> Project Management</span></div>
+              <div class="gutter-item"><img class="icon" src="/assets/Icons/people.png" /><span> Requirments Gathering</span></div>
+            </div>
           </div>
         </div>
         <h2 class="content-header">
@@ -272,52 +270,58 @@
             </a>
           </span>
         </h2>
-        <!-- these ones dont rotate on their own -->
+        <!-- these 'slides' dont rotate on their own -->
         <div class="carousel-container experience">
           <div class="carousel-items">
             <div class="experience-group focus">
-              <div class="experience-area-spotlight" onmouseenter="showGlobalHover(this, 'hover-app-7')" onmouseleave="hideGlobalHover(this)">
+              <div class="experience-area-spotlight" onmouseenter="showGlobalHover(this, 'hover-app-exp-1')" onmouseleave="hideGlobalHover(this)">
                 <div class="spotlight-img">
                   <a href="">
-                    <img src="/assets/experience/exp_sample_1.png" />
+                    <img src="/assets/experience/ClearFreight.png" />
                   </a>
                 </div>
-
                 <div class="spotlight-content">
-                  <h2>University of California,Los Angeles<br /></h2>
-                  <div class="spotlight-body">Bachelors of Science, Mathematics of Computation</div>
+                  <h2>Application Developer<br />ClearFreight Inc.</h2>
+                  <div class="spotlight-body">
+                    Current Employer<br />
+                    Since July 2018
+                  </div>
                 </div>
               </div>
-              <div class="experience-area-spotlight" onmouseenter="showGlobalHover(this)" onmouseleave="hideGlobalHover(this)">
+              <div class="experience-area-spotlight" onmouseenter="showGlobalHover(this, 'hover-app-exp-2')" onmouseleave="hideGlobalHover(this)">
                 <div class="spotlight-img">
                   <a href="">
-                    <img src="/assets/experience/exp_sample_1.png" />
+                    <img src="/assets/experience/UCLA.png" />
                   </a>
                 </div>
                 <div class="spotlight-content">
-                  <h2>Free Weekend</h2>
-                  <div class="spotlight-body">Offer ends Mar 2 @ 10:00am.</div>
+                  <h2>University of California,<br />Los Angeles</h2>
+                  <div class="spotlight-body">
+                    Bachelors of Science,<br />
+                    Mathematics of Computation
+                  </div>
                 </div>
               </div>
               <div class="experience-area-spotlight-col">
-                <div class="spotlight-col-item" onmouseenter="showGlobalHover(this)" onmouseleave="hideGlobalHover(this)">
-                  <img class="spotlight-img" src="/assets/experience/exp_sample_2.png" />
+                <div class="spotlight-col-item" onmouseenter="showGlobalHover(this, 'hover-app-exp-3')" onmouseleave="hideGlobalHover(this)">
+                  <img class="spotlight-img" src="/assets/experience/GIRS.png" />
                   <div class="spotlight-content">
-                    <h2>Free Weekend</h2>
-                    <div class="spotlight-body">Offer ends Mar 2 @ 10:00am.</div>
+                    <h2>Programmer Analyst · Internship</h2>
+                    <div class="spotlight-body">The B. John Garrick Institute for the Risk Sciences at UCLA<br />May 2018 - Aug 2018</div>
                   </div>
                 </div>
-                <div class="spotlight-col-item" onmouseenter="showGlobalHover(this)" onmouseleave="hideGlobalHover(this)">
-                  <img class="spotlight-img" src="/assets/experience/exp_sample_2.png" />
+                <div class="spotlight-col-item" onmouseenter="showGlobalHover(this, 'hover-app-exp-4')" onmouseleave="hideGlobalHover(this)">
+                  <img class="spotlight-img" src="/assets/experience/CMC.png" />
                   <div class="spotlight-content">
-                    <h2>Free Weekend</h2>
-                    <div class="spotlight-body">Offer ends Mar 2 @ 10:00am.</div>
+                    <h2>Copper Mountain Community College</h2>
+                    <div class="spotlight-body">Associate's Degree, Computer Science<br />Associate's Degree, Mathematics</div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="carousel-thumbs" data-usability="1">
+          <!-- disabled until experience and work history has multiple pages -->
+          <!-- <div class="carousel-thumbs" data-usability="1">
             <div onclick="showSlide()"></div>
             <div onclick="showSlide()"></div>
             <div onclick="showSlide()"></div>
@@ -328,56 +332,87 @@
           </div>
           <div class="arrow right" data-usability="1" onclick="">
             <div></div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
     <div class="main-hover hover" id="global-hover">
       <div class="hover-box">
         <div id="main-hover-content" class="content">
-          <div id="hover-app-1" class="hover-app-content">
+          <div id="hover-app-slider-1" class="hover-app-content">
             <div class="hover-top-area" style="display: none"></div>
-            <h4 class="hover-title">Title 1</h4>
+            <h4 class="hover-title">Tile Jumper</h4>
+            <span></span>
             <div class="hover-release">
-              <span>Released: Feb 15, 2023</span>
+              <span>2012 - 2016</span>
               <div></div>
             </div>
             <div class="hover-summary">
-              <p>this is a nice test description for my test item that will detail the project, talk about its implementation, and useage.</p>
+              <div>
+                Graduated with Academic Distinction
+                <br />
+                <br />
+                Coursework Includes: C++ Programming, Assembler Language, Multivariable Calculus, Engineering Physics, Game Theory
+              </div>
             </div>
             <div class="hover-body">
               <div class="hover-review-summary">
                 <div class="title">Overall user reviews:</div>
                 <span class="game-review-summary positive">Very Positive</span>
-                (1,488 reviews)
+                (all my friends and student peers)
               </div>
               <div style="clear: left"></div>
             </div>
             <div class="hover-body">
               User tags:
               <div class="hover-tag-row">
-                <div class="app-tag">Action</div>
-                <div class="app-tag">Roguelike</div>
-                <div class="app-tag">Action Roguelike</div>
-                <div class="app-tag">Singleplayer</div>
-                <div class="app-tag">Co-op</div>
-                <div class="app-tag">Bullet Hell</div>
-                <div class="app-tag">Space</div>
-                <div class="app-tag">Online Co-Op</div>
-                <div class="app-tag">Female Protagonist</div>
-                <div class="app-tag">Shooter</div>
+                <div class="app-tag">great self teacher</div>
+                <div class="app-tag">organized</div>
+                <div class="app-tag">attentive</div>
+              </div>
+              <div class="hover-tag-row">
+                <div class="app-tag">good leadership skills</div>
+                <div class="app-tag">empethetic</div>
               </div>
             </div>
-            <div class="rule"></div>
-            <div class="hover-body-block">1 friend owns this game:</div>
-            <div class="friend-blocks-row hover-friends-blocks">
-              <div class="playerAvatar offline">
-                <img id="friend_avatar_img_69281084" src="/assets/card_capsule/slide1/mini_slide_1.jpg" />
+          </div>
+          <div id="hover-app-exp-1" class="hover-app-content">
+            <div class="hover-top-area" style="display: none"></div>
+            <h4 class="hover-title">Application Developer<br /></h4>
+            <span>ClearFreight Inc.</span>
+            <div class="hover-release">
+              <span>Jul 2018 - Present</span>
+              <div></div>
+            </div>
+            <div class="hover-summary">
+              <div>
+                Primarily created desktop applications using a .NET/WPF/MSSQL stack and web applications using a .NET/Angular/Postgres stack. Helped manage contracted development firms. Responsibilities include development cycle overview,
+                technical and architectural direction, software design review, and code review.
+              </div>
+            </div>
+            <div class="hover-body">
+              <div class="hover-review-summary">
+                <div class="title">Overall user reviews:</div>
+                <span class="game-review-summary positive">Very Positive</span>
+                (my boss and coworkers)
               </div>
               <div style="clear: left"></div>
             </div>
+            <div class="hover-body">
+              User tags:
+              <div class="hover-tag-row">
+                <div class="app-tag">self starter</div>
+                <div class="app-tag">good communicator</div>
+                <div class="app-tag">reliable</div>
+              </div>
+              <div class="hover-tag-row">
+                <div class="app-tag">great problem solver</div>
+                <div class="app-tag">personalable</div>
+                <div class="app-tag">creative</div>
+              </div>
+            </div>
           </div>
-          <div id="hover-app-7" class="hover-app-content">
+          <div id="hover-app-exp-2" class="hover-app-content">
             <div class="hover-top-area" style="display: none"></div>
             <h4 class="hover-title">University of California, Los Angeles</h4>
             <span>Bachelors of Science, Mathematics of Computation</span>
@@ -386,41 +421,103 @@
               <div></div>
             </div>
             <div class="hover-summary">
-              <p>
+              <div>
                 Coursework Includes: Software Engineering, Operating Systems, Algorithms, Computer Graphics, Machine Learning, Linear Algebra, Applied Numerical Methods, Analysis, Ordinary Differential Equations, Mathematical Optimization,
                 Game Theory, Complex Analysis.
-              </p>
+              </div>
             </div>
             <div class="hover-body">
               <div class="hover-review-summary">
                 <div class="title">Overall user reviews:</div>
                 <span class="game-review-summary positive">Very Positive</span>
-                (1,488 reviews)
+                (my friends and student peers)
               </div>
               <div style="clear: left"></div>
             </div>
             <div class="hover-body">
               User tags:
               <div class="hover-tag-row">
-                <div class="app-tag">Action</div>
-                <div class="app-tag">Roguelike</div>
-                <div class="app-tag">Action Roguelike</div>
-                <div class="app-tag">Singleplayer</div>
-                <div class="app-tag">Co-op</div>
-                <div class="app-tag">Bullet Hell</div>
-                <div class="app-tag">Space</div>
-                <div class="app-tag">Online Co-Op</div>
-                <div class="app-tag">Female Protagonist</div>
-                <div class="app-tag">Shooter</div>
+                <div class="app-tag">dilligent</div>
+                <div class="app-tag">good study partner</div>
+                <div class="app-tag">great friend</div>
+              </div>
+              <div class="hover-tag-row">
+                <div class="app-tag">passionate</div>
+                <div class="app-tag">hardworking</div>
               </div>
             </div>
-            <div class="rule"></div>
-            <div class="hover-body-block">1 friend owns this game:</div>
-            <div class="friend-blocks-row hover-friends-blocks">
-              <div class="playerAvatar offline">
-                <img id="friend_avatar_img_69281084" src="/assets/card_capsule/slide1/mini_slide_1.jpg" />
+          </div>
+          <div id="hover-app-exp-3" class="hover-app-content">
+            <div class="hover-top-area" style="display: none"></div>
+            <h4 class="hover-title">Programmer Analyst</h4>
+            <span>The B. John Garrick Institute for the Risk Sciences at UCLA · Internship</span>
+            <div class="hover-release">
+              <span>May 2018 - Aug 2018</span>
+              <div></div>
+            </div>
+            <div class="hover-summary">
+              <div>
+                Developed web application front-ends using React and implemented back-end logic using Node. Wrote some requirements for high-level system architecture and created UI designs for web applications focused on risk, reliability,
+                and resilience.
+              </div>
+            </div>
+            <div class="hover-body">
+              <div class="hover-review-summary">
+                <div class="title">Overall user reviews:</div>
+                <span class="game-review-summary positive">Very Positive</span>
+                (my fellow interns)
               </div>
               <div style="clear: left"></div>
+            </div>
+            <div class="hover-body">
+              User tags:
+              <div class="hover-tag-row">
+                <div class="app-tag">quick learner</div>
+                <div class="app-tag">good time managemnet</div>
+                <div class="app-tag">team player</div>
+              </div>
+              <div class="hover-tag-row">
+                <div class="app-tag">self motivated</div>
+                <div class="app-tag">flexible</div>
+                <div class="app-tag"></div>
+              </div>
+            </div>
+          </div>
+          <div id="hover-app-exp-4" class="hover-app-content">
+            <div class="hover-top-area" style="display: none"></div>
+            <h4 class="hover-title">Copper Mountain Community College</h4>
+            <span>Associate's Degree, Computer Science<br />Associate's Degree, Mathematics</span>
+            <div class="hover-release">
+              <span>2012 - 2016</span>
+              <div></div>
+            </div>
+            <div class="hover-summary">
+              <div>
+                Graduated with Academic Distinction
+                <br />
+                <br />
+                Coursework Includes: C++ Programming, Assembler Language, Multivariable Calculus, Engineering Physics, Game Theory
+              </div>
+            </div>
+            <div class="hover-body">
+              <div class="hover-review-summary">
+                <div class="title">Overall user reviews:</div>
+                <span class="game-review-summary positive">Very Positive</span>
+                (all my friends and student peers)
+              </div>
+              <div style="clear: left"></div>
+            </div>
+            <div class="hover-body">
+              User tags:
+              <div class="hover-tag-row">
+                <div class="app-tag">great self teacher</div>
+                <div class="app-tag">organized</div>
+                <div class="app-tag">attentive</div>
+              </div>
+              <div class="hover-tag-row">
+                <div class="app-tag">good leadership skills</div>
+                <div class="app-tag">empethetic</div>
+              </div>
             </div>
           </div>
         </div>
