@@ -475,6 +475,41 @@ div.gutter-item {
   display: inline-block;
   width: 298px;
 }
+
+.main-capsule .reason .main {
+  min-height: 45px;
+  font-size: 17px;
+  padding-right: 10px;
+  padding-top: 6px;
+  font-family: "Motiva Sans", Sans-serif;
+  font-weight: 300;
+  line-height: 18px;
+}
+
+.main-capsule .reason .main.default {
+  font-size: 21px;
+  font-weight: 200;
+  min-height: auto;
+}
+
+.main-capsule .reason .additional {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.main-capsule .reason .tech-used {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0.7;
+}
+
+.main-capsule img.tech-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+}
 /* TODO: add sub items under reason */
 /* end slider capsule style */
 

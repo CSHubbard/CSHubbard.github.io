@@ -62,8 +62,11 @@ function showGlobalHover(hoveredElement, hoverTarget = null) {
   // to ensure the hover hide transition works correctly the hover content is kept track of,
   //  and sent to display:one just before the  new hover contnet is to be displayed.
   if (globalHoverContent) {
-    globalHoverContent.style.display = "none";
-    globalHoverContent = null;
+    let pastHover = globalHoverContent;
+    setTimeout(() => {
+      pastHover.style.display = "none";
+      pastHover = null;
+    }, 200)
   }
 
   if (hoveredElement.id == "main-capsule-container") {
@@ -71,7 +74,7 @@ function showGlobalHover(hoveredElement, hoverTarget = null) {
     // slides dont have their own hover target becasue the hover event it triggered
     // on the high level container, so there is some special logic to select the corrent
     // hover content.
-    globalHoverContent = document.getElementById("hover-app-" + slideIndex);
+    globalHoverContent = document.getElementById("hover-app-slider-" + slideIndex);
   }
 
   if (hoverTarget != null) {
