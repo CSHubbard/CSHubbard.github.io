@@ -1,22 +1,24 @@
 let slideIndex = 0;
 let slideTimeoutID;
+let carosuelTimer = 6000; // Change image every 6 seconds
+let hoverFade = 300; // .3 seconds wait bnefore hover shown
 carousel();
 
 function prevSlide() {
   clearTimeout(slideTimeoutID);
   showSlide(slideIndex - 1);
-  slideTimeoutID = setTimeout(carousel, 6000); // Change image every 6 seconds
+  slideTimeoutID = setTimeout(carousel, carosuelTimer);
 }
 
 function nextSlide() {
   clearTimeout(slideTimeoutID);
   showSlide(slideIndex + 1);
-  slideTimeoutID = setTimeout(carousel, 6000); // Change image every 6 seconds
+  slideTimeoutID = setTimeout(carousel, carosuelTimer);
 }
 
 function carousel() {
   showSlide(slideIndex + 1);
-  slideTimeoutID = setTimeout(carousel, 6000); // Change image every 6 seconds
+  slideTimeoutID = setTimeout(carousel, carosuelTimer);
 }
 
 function showSlide(n) {
@@ -59,14 +61,17 @@ let globalHoverID;
 let globalHoverContent = null;
 let globalHover = document.getElementById(`global-hover`);
 function showGlobalHover(hoveredElement, hoverTarget = null) {
-  // to ensure the hover hide transition works correctly the hover content is kept track of,
-  //  and sent to display:one just before the  new hover contnet is to be displayed.
+  // To ensure the hover hide transition works correctly the hover content is kept track of,
+  // and sent to display:none just before the  new hover contnet is to be displayed.
   if (globalHoverContent) {
     let pastHover = globalHoverContent;
+    // In the css the hover element opacity transition is 300, so adding a timeout here will
+    // ensure that the hover is hidden before its content is removed.
+
     setTimeout(() => {
       pastHover.style.display = "none";
       pastHover = null;
-    }, 200)
+    }, 300);
   }
 
   if (hoveredElement.id == "main-capsule-container") {
@@ -81,7 +86,7 @@ function showGlobalHover(hoveredElement, hoverTarget = null) {
     globalHoverContent = globalHoverContent = document.getElementById(hoverTarget);
   }
 
-  // calculate the necessary top and left to have the global-hover float direct next to the hovered element
+  // this timeout simulates a 'hover for x seconds' effect
   globalHoverID = setTimeout(() => {
     if (globalHoverContent) {
       globalHoverContent.style.display = "block";
@@ -89,6 +94,7 @@ function showGlobalHover(hoveredElement, hoverTarget = null) {
     }
     let originalWindowHeight = window.document.documentElement.scrollHeight;
     let parentBoundingRect = hoveredElement.getBoundingClientRect();
+    // calculate the necessary top and left to have the global-hover float direct next to the hovered element
     let hoverFloatTop = parentBoundingRect.top + window.pageYOffset - 12;
     let hoverFloatLeft = parentBoundingRect.left + window.pageXOffset + parentBoundingRect.width + -8;
 
@@ -101,12 +107,11 @@ function showGlobalHover(hoveredElement, hoverTarget = null) {
     if (originalWindowHeight < window.document.documentElement.scrollHeight) {
       let topOffset = originalWindowHeight - window.document.documentElement.scrollHeight;
       globalHover.style.top = topOffset + hoverFloatTop + "px";
-      // apply the reverse of the offset to the arrow so that it stays at the same place on the
-      // hovered element.
+      // apply the reverse of the offset to the arrow so that it stays at the same place on the hovered element.
       hoverArrow.style.top = topOffset * -1 + 48 + "px";
     }
     globalHover.style.opacity = 1;
-  }, 300);
+  }, hoverFade);
 }
 
 function hideGlobalHover(hoveredElement) {
@@ -116,6 +121,6 @@ function hideGlobalHover(hoveredElement) {
   globalHoverContent.style.opacity = 0;
   globalHover.style.opacity = 0;
   if (hoveredElement.id == "main-capsule-container") {
-    slideTimeoutID = setTimeout(carousel, 6000); // Change image every 6 seconds
+    slideTimeoutID = setTimeout(carousel, carosuelTimer);
   }
 }

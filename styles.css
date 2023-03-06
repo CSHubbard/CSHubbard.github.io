@@ -480,14 +480,14 @@ div.gutter-item {
   min-height: 45px;
   font-size: 17px;
   padding-right: 10px;
-  padding-top: 6px;
+  padding-top: 0px;
   font-family: "Motiva Sans", Sans-serif;
   font-weight: 300;
   line-height: 18px;
 }
 
 .main-capsule .reason .main.default {
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 200;
   min-height: auto;
 }
@@ -497,7 +497,50 @@ div.gutter-item {
   font-size: 14px;
 }
 
-.main-capsule .reason .tech-used {
+.main-capsule .reason .tags {
+  margin-top: 8px;
+  font-size: 17px;
+  height: 46px;
+  overflow: hidden;
+}
+
+.main-capsule .reason .tags > span {
+  display: inline-block;
+  line-height: 19px;
+  padding: 0 7px;
+  background-color: rgba( 255, 255, 255, 0.2 );
+  box-shadow: none;
+  margin-right: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 3px;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 11px;
+}
+
+.main-capsule .reason .additional > div {
+  margin: 3px 0;
+  display: inline-block;
+  margin-right: 14px;
+  line-height: 19px;
+  padding: 0 7px;
+  background-color: rgba( 255, 255, 255, 0.2 );
+  box-shadow: none;
+  margin-right: 2px;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-bottom: 3px;
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 11px;
+}
+
+.main-capsule .tech-used {
   position: absolute;
   bottom: 10px;
   right: 10px;
