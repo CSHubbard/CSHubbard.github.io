@@ -67,7 +67,6 @@ function showGlobalHover(hoveredElement, hoverTarget = null) {
     let pastHover = globalHoverContent;
     // In the css the hover element opacity transition is 300, so adding a timeout here will
     // ensure that the hover is hidden before its content is removed.
-
     setTimeout(() => {
       pastHover.style.display = "none";
       pastHover = null;
